@@ -2,22 +2,11 @@ import torch
 
 
 class SGD_globLR(torch.optim.Optimizer):
-    r"""Implements stochastic gradient descent (optionally with momentum).
+    r"""Implements stochastic gradient descent with self-tuned learning rate by gradient descent
 
     Args:
         params (iterable): iterable of parameters to optimize or dicts defining
             parameter groups
-        lr (float): learning rate
-        momentum (float, optional): momentum factor (default: 0)
-        weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
-        dampening (float, optional): dampening for momentum (default: 0)
-        nesterov (bool, optional): enables Nesterov momentum (default: False)
-
-    Example:
-        >>> optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9)
-        >>> optimizer.zero_grad()
-        >>> loss_fn(model(input), target).backward()
-        >>> optimizer.step()
     """
     def __init__(self, params, momentum=0, dampening=0, weight_decay=0):
         if momentum < 0.0:
