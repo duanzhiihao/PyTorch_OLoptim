@@ -25,7 +25,7 @@ A Pytorch implementation of various Online / Stochastic optimization algorithms
 - a nice blog post: https://parameterfree.com/2019/11/12/multi-armed-bandit-i/
 
 **UCB: Upper Confidence Bound algorithm**
-- intro: a classic algorithm for stochastic multi-armed bandit problem, which achieves the optimal regret bound while is parameter-free. Implement it as a learning rate scheduler
+- intro: a classic algorithm for stochastic multi-armed bandit problem, which achieves the optimal regret bound while being parameter-free. Implement it as a learning rate scheduler
 - a nice blog post: https://parameterfree.com/2019/11/21/multi-armed-bandit-iv-ucb/
 
 **SGDPF**
