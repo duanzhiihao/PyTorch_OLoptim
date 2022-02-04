@@ -1,6 +1,10 @@
 # PyTorch_OLoptim
 A Pytorch implementation of various Online / Stochastic optimization algorithms
 
+This is a course project for the Online Learning course at BU. Interested readers are refered to [A Modern Introduction to Online Learning](https://arxiv.org/abs/1912.13213) by Prof. Orabona.
+
+If you find this repository helpful, feel free to take it for research usage.
+
 # Descriptions
 
 **FTRL: Follow the Regularized Leader**
